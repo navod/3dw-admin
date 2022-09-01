@@ -3,6 +3,7 @@ import connection from "./database.js";
 import cors from "cors";
 import bodyParser from "body-parser";
 import userRoutes from "./routes/users.js";
+import groupRoutes from "./routes/groups.js";
 import dotenv from "dotenv";
 
 const app = express();
@@ -12,6 +13,7 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
 app.use("/user", userRoutes);
+app.use("/group", groupRoutes);
 
 app.get("/", (req, res) => {
   res.send("Hello to api");

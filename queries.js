@@ -24,4 +24,18 @@ export const QUERY = {
     GET_ALL_NEW_USERS:
       "SELECT userId,username,company,email,lastActiveDate,createdIP,lastActiveIP,isDeletd,userRole,createdDate,firstname,lastname,status FROM user where  createdDate LIKE '%' ? '%'",
   },
+
+  GROUP: {
+    CREATE_GROUP:
+      "INSERT INTO test.group (groupId,groupLevel,groupName) VALUES ?",
+
+    CREATE_USER_GROUP: "INSERT INTO test.usergroup (groupId,userId) VALUES ?",
+
+    GET_ALL_GROUPS: "SELECT * FROM test.group",
+
+    UPDATE_GROUP:
+      "UPDATE test.group SET groupName=?, groupLevel=? WHERE groupId=?",
+
+    SEARCH_GROUP: `SELECT * FROM test.group where groupName LIKE '%' ? '%' OR groupLevel LIKE '%' ? '%'`,
+  },
 };
