@@ -23,13 +23,13 @@ contentType = `application/json`
 ```bash
   Example
   {
-    "username":"user"						: String
-    "company":"company"				: String
-    "firstname":"jhon"						: String
-    "lastname":"Ardon"					: String
-    "password":"13213$%"			: String
-    "email":"j@gmail.com"			: String
-    "userRole":"Admin"					: String
+    "username":"user"   : String
+    "company":"company"   : String
+    "firstname":"jhon"   : String
+    "lastname":"Ardon"   : String
+    "password":"13213$%"   : String
+    "email":"j@gmail.com"   : String
+    "userRole":"Admin"   : String
 }
 ```
 ------------
@@ -39,14 +39,14 @@ contentType = `application/json`
   Example
   {
     "userId":"14ef3430-291b-11ed-b7d6-83db24ca3729"  : String
-    "username":"user"						: String
-	  "status":"false"							: String
-	"createdDate":"2022-08-31 16:23:01" 					 : new Date()
-    "lastActiveDate":"2022-08-31 17:23:01" 				 : new Date()
-	"createdIP":"192.168.1.13"										: String
-    "lastActiveIP":"192.168.1.13"									: String
-    "firstname":"jhon123"											:String 
-    "lastname":"Albert" 												: String
+    "username":"user"   : String
+	  "status":"false"   : String
+	"createdDate":"2022-08-31 16:23:01"   : new Date()
+    "lastActiveDate":"2022-08-31 17:23:01"   : new Date()
+	"createdIP":"192.168.1.13"   : String
+    "lastActiveIP":"192.168.1.13"   : String
+    "firstname":"jhon123"   :String 
+    "lastname":"Albert"   : String
 }
 ```
 ------------
@@ -67,8 +67,8 @@ users can search by their username,status,firstname,lastname
 ```bash
   Example
   {
-    "email":"j@gmail.com"						:_String
-    "password":"13213$%"					 	:_String
+    "email":"j@gmail.com"   :_String
+    "password":"13213$%"   :_String
  }
 ```
 ------------
@@ -79,7 +79,7 @@ users can search by their username,status,firstname,lastname
 Example
 - following example pass as a params
  params {
-    "userId":"14ef3430-291b-11ed-b7d6-83db24ca3729"						:_String
+    "userId":"14ef3430-291b-11ed-b7d6-83db24ca3729"   : String
  }
 ```
 
@@ -92,12 +92,12 @@ Example
   
 - following example pass as a params
   {
-    "userId":"14ef3430-291b-11ed-b7d6-83db24ca3729"						:_String
+    "userId":"14ef3430-291b-11ed-b7d6-83db24ca3729"   : String
  }
  
  - pass as a  body
  {
-    "status":"true"							: String
+    "status":"true"   : String
 }
 ```
 ------------
@@ -113,11 +113,11 @@ Example
 ```bash
   Example 
 {
-  "groupLevel":"2",
-    "groupName":"titans",
-    "users":[
-        "06959090-2949-11ed-a096-5b42012bc1dd",
-        "92492150-291d-11ed-9db0-679607ccbf4f"
+  "groupLevel":"2",   : String
+    "groupName":"titans",   : String
+    "users":[   :array
+        "06959090-2949-11ed-a096-5b42012bc1dd",   : String
+        "92492150-291d-11ed-9db0-679607ccbf4f"   :String
     ]    
 	
 }
@@ -132,13 +132,13 @@ Example
   Example
 - following example pass as a params
   {
-    "groupId":"dc4e13c0-2a2e-11ed-8b1b-bb4a41eb7e16"						:_String
+    "groupId":"dc4e13c0-2a2e-11ed-8b1b-bb4a41eb7e16"   :_String
  }
  
  - pass as a  body
  {
-    "groupName":"gujarati titans"					: String
-    "groupLevel":"52" 		:							: String
+    "groupName":"gujarati titans"   : String
+    "groupLevel":"52"   : String
 }
 ```
 ------------
